@@ -273,7 +273,7 @@ const DataTable = ({
                         color="primary"
                         onClick={() => onEdit(row)}
                       >
-                        <EditIcon fontSize="small" />
+                        <EditIcon sx={{ color: "rgba(28, 27, 31, 1)" }} fontSize="small" />
                       </IconButton>
                     </Tooltip>
                   </TableCell>

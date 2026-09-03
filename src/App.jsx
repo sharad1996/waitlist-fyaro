@@ -213,9 +213,9 @@ function App() {
                           variant="contained"
                           sx={{
                             backgroundColor: 'rgba(200, 213, 217, 1)',
-                            color: 'rgba(0, 0, 0, 1)',
+                            color: 'rgba(78, 70, 54, 1)',
                             textTransform: 'none',
-                            fontWeight: 400,
+                            fontWeight: 500,
                             width: '142px',
                             height: '32px',
                             fontSize: '12px',

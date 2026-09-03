@@ -139,7 +139,7 @@ const FilterContent = ({
   return (
     <Stack spacing={3}>
       {/* Postcode */}
-      <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, my: 2 }}>
+      <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, m: "20px 0 20px 0 !important" }}>
         <img src={logo} alt="Logo" />
 
       </Box>
@@ -163,12 +163,13 @@ const FilterContent = ({
       >
         User Management
       </Button>
-      <Box>
+      <Box sx={{ m: "40px 0 20px 0 !important" }}>
         <TextField
           fullWidth
           size="small"
           label="Postcode"
-          placeholder="UK ZIP code"
+          sx={{ backgroundColor: '#fff', border: '1px solid rgba(115, 119, 127, 1)', borderRadius: '4px' }}
+          placeholder="ZIP"
           value={filters.postcode || ''}
           onChange={(e) =>
             handleInputChange(e, 'postcode')
@@ -181,9 +182,9 @@ const FilterContent = ({
         <Typography
           variant="subtitle2"
           sx={{
-            fontWeight: 600,
+            fontWeight: 700,
             mb: 1,
-            color: 'text.secondary',
+            color: 'rgba(50, 64, 84, 1)',
           }}
         >
           Registration Status
@@ -227,19 +228,19 @@ const FilterContent = ({
       </Box>
 
       {/* Date Registered */}
-      <Box>
+      <Box sx={{ m: "30px 0 20px 0 !important" }}>
         <Typography
           variant="subtitle2"
           sx={{
-            fontWeight: 600,
+            fontWeight: 700,
             mb: 1,
-            color: 'text.secondary',
+            color: 'rgba(50, 64, 84, 1)',
           }}
         >
           Date Registered
         </Typography>
 
-        <Stack spacing={1}>
+        <Stack spacing={1} sx={{ flexDirection: { xs: 'column', sm: 'row' }, gap: 1, alignItems: 'baseline' }}>
           <TextField
             fullWidth
             size="small"
@@ -269,9 +270,9 @@ const FilterContent = ({
         <Typography
           variant="subtitle2"
           sx={{
-            fontWeight: 600,
+            fontWeight: 700,
             mb: 1,
-            color: 'text.secondary',
+            color: 'rgba(50, 64, 84, 1)',
           }}
         >
           Vendor Type
@@ -321,13 +322,13 @@ const FilterContent = ({
       </Box>
 
       {/* Service Offering */}
-      <Box>
+      <Box sx={{ m: "30px 0 20px 0 !important" }}>
         <Typography
           variant="subtitle2"
           sx={{
-            fontWeight: 600,
+            fontWeight: 700,
             mb: 1,
-            color: 'text.secondary',
+            color: 'rgba(50, 64, 84, 1)',
           }}
         >
           Service Offering
@@ -396,7 +397,6 @@ const FilterContent = ({
         </FormGroup>
       </Box>
 
-      <Divider />
 
       {/* Buttons */}
       <Stack spacing={1}>
