@@ -65,7 +65,6 @@ const Sidebar = ({
         top: { md: 16 },
       }}
     >
-      {/* Filter Header */}
       <Box
         onClick={() => setOpen((prev) => !prev)}
         sx={{
@@ -76,7 +75,6 @@ const Sidebar = ({
         }}
       >
 
-        {/* Mobile expand button */}
         <IconButton
           size="small"
           sx={{
@@ -89,10 +87,7 @@ const Sidebar = ({
         </IconButton>
       </Box>
 
-      {/* Desktop divider */}
-      {/* <Divider sx={{ my: 2 }} /> */}
 
-      {/* Filters Content */}
       <Collapse
         in={open}
         sx={{
@@ -109,7 +104,6 @@ const Sidebar = ({
         />
       </Collapse>
 
-      {/* Desktop Content */}
       <Box
         sx={{
           display: { xs: 'none', md: 'block' },
@@ -138,7 +132,6 @@ const FilterContent = ({
 }) => {
   return (
     <Stack spacing={3}>
-      {/* Postcode */}
       <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, m: "20px 0 20px 0 !important" }}>
         <img src={logo} alt="Logo" />
 
@@ -177,7 +170,6 @@ const FilterContent = ({
         />
       </Box>
 
-      {/* Registration Status */}
       <Box>
         <Typography
           variant="subtitle2"
@@ -227,7 +219,6 @@ const FilterContent = ({
         </FormGroup>
       </Box>
 
-      {/* Date Registered */}
       <Box sx={{ m: "30px 0 20px 0 !important" }}>
         <Typography
           variant="subtitle2"
@@ -265,7 +256,6 @@ const FilterContent = ({
         </Stack>
       </Box>
 
-      {/* Vendor Type */}
       <Box>
         <Typography
           variant="subtitle2"
@@ -321,7 +311,6 @@ const FilterContent = ({
         </FormGroup>
       </Box>
 
-      {/* Service Offering */}
       <Box sx={{ m: "30px 0 20px 0 !important" }}>
         <Typography
           variant="subtitle2"
@@ -398,7 +387,6 @@ const FilterContent = ({
       </Box>
 
 
-      {/* Buttons */}
       <Stack spacing={1}>
         <Button
           fullWidth

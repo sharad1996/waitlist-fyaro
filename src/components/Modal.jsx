@@ -51,7 +51,6 @@ const Modal = ({ isOpen, onClose, row }) => {
   return (
     <Dialog open={isOpen} onClose={onClose} maxWidth="sm">
       <Box sx={{ padding: '20px' }}>
-        {/* Header with Close Button */}
         <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', pb: 1.5 }}>
           <Typography variant="subtitle1" sx={{ fontWeight: 600, color: 'rgba(0, 0, 0, 1)', display: 'flex', alignItems: 'center', gap: 1 }}>
             <PermIdentityIcon sx={{ fontSize: '1.1rem', color: 'text.secondary' }} /> User Details
@@ -61,7 +60,6 @@ const Modal = ({ isOpen, onClose, row }) => {
           </IconButton>
         </Box>
 
-        {/* Service Provider Name */}
         <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap' }}>
           <Box>
             <Typography variant="h6" sx={{ fontWeight: 700, fontSize: '1.2rem' }}>
@@ -270,7 +268,6 @@ const Modal = ({ isOpen, onClose, row }) => {
           )}
         </Box>
 
-        {/* Action Buttons */}
         <Box
           sx={{
             p: 2.5,

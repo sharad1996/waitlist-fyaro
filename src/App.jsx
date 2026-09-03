@@ -175,12 +175,9 @@ function App() {
       <Box sx={{ backgroundColor: '#fff', minHeight: '100vh', py: 2 }}>
         <Container maxWidth="xl">
           <Stack spacing={3}>
-            {/* Header */}
 
 
-            {/* Main Content */}
             <Stack spacing={3} direction={{ xs: 'column', md: 'row' }} alignItems={{ xs: 'stretch', md: 'flex-start' }}>
-              {/* Sidebar */}
               <Box sx={{ width: { xs: '100%', md: 280 } }}>
                 <Sidebar
                   filters={filters}
@@ -190,10 +187,8 @@ function App() {
                 />
               </Box>
 
-              {/* Main Content Area */}
               <Box sx={{ flex: 1, width: { xs: '100%', md: 280 } }}>
                 <Stack spacing={2}>
-                  {/* Search Bar */}
                   <Box sx={{
                     display: { xs: 'block', sm: "flex", md: 'flex' }, justifyContent: 'space-between', alignItems: 'end'
                   }}>
@@ -254,14 +249,12 @@ function App() {
                     <SearchBar onSearch={handleSearch} />
                   </Box>
 
-                  {/* Selected Info Alert */}
                   {selectedRows.length > 0 && (
                     <Alert severity="info" sx={{ mb: 1 }}>
                       {selectedRows.length} row(s) selected
                     </Alert>
                   )}
 
-                  {/* Data Table */}
                   <DataTable
                     data={mockData}
                     filters={filters}
@@ -277,7 +270,6 @@ function App() {
         </Container>
       </Box >
 
-      {/* Modal */}
       < Modal
         isOpen={modalOpen}
         onClose={() => setModalOpen(false)
@@ -285,7 +277,6 @@ function App() {
         row={selectedRow}
       />
 
-      {/* Toast Notification */}
       {
         toast && (
           <Toast
